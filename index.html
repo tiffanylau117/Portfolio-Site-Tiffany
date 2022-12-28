@@ -6,26 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tiffany's Portfolio</title>
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <body> 
   <div>
     <img src="img/Logo.png" alt="TIFFANY LAU">
     <nav>
       <ul> 
         <li><a href="index.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="contact.html">About</a></li>
+        <li><a href="#contact" class="contactButton">Say hello</a></li>
       </ul>
     </nav>
   </div>
 
   <div>
     <div>
-      <h1> Hello! 
-        <span> I'm Tiffany, </span> 
+      <h1> Hello!
+        <br> 
+        <span class="weight">I'm 
+        <span id="makeGreen">Tiffany,</span>
+      </span> 
+      <span class="makeFontLight"> a Product Designer, Published Artist, and a Creator of Impactful Designs. </span>
       </h1>
-      <p> a Product Designer, Published Artist, and a Creator of Impactful Designs. </p>
     </div>
   </div>
+
+  <picture> 
+    <source srcset="https://i.imgur.com/Go29pwb.png" media="(max-width:767px)">
+    <img src="img/1x_Hero_image.png" alt="Fetch project">
+  </picture>
 
   <div>
     <div> 
@@ -42,10 +54,10 @@
           <p><!-- open paragraph --> 
             A responsive web recommendation app for dog owners
           </p><!-- end paragraph--> 
-          <p><!-- open paragraph--> 
+          <p class="Tools"><!-- open paragraph--> 
             Figma, Photoshop
           </p><!-- end paragraph-->
-          <a href="Fetch.html">View project</a><!-- button or link label -->
+          <a href="Fetch.html" class="button">View project</a><!-- button or link label -->
         </div><!-- end second column-->
       </div><!-- end row that holds (2) columns for project-->
   <br>
@@ -61,26 +73,25 @@
           <p><!-- open paragraph --> 
             A native mobile app for learning how to recycle responsibly
           </p><!-- end paragraph--> 
-          <p><!-- open paragraph--> 
+          <p class="Tools"><!-- open paragraph--> 
             Adobe XD, Photoshop
           </p><!-- end paragraph-->
-          <a href="https://www.behance.net/tiffany_lau">View project</a><!-- button or link label -->
+          <a href="https://www.behance.net/tiffany_lau" class="button">View project</a><!-- button or link label -->
         </div><!-- end second column-->
       </div><!-- end row that holds (2) columns for project-->
     </div>
-    
+    <h3> Want to chat about design over a good couple of coffee? </h3>
 <footer id="contact">
   <div> 
     <h2>Say Hello</h2>
-    <p> 
-      Want to chat about design over a good couple of coffee? 
+    <p>  
       Get in touch. Call: <a href="tel:+14157341746">+1 (415) 734-1746</a> or Skype me at <a href="tiffanylau117@gmail.com"> tiffanylau[at]gmail.com</a>.
       <br>
       <br>
       Prefer sending an email?
     </p>
     <div>
-      <a href="mailto:tiffanylau117@gmail.com">Email me</a>
+      <a href="mailto:tiffanylau117@gmail.com" class="button contact">Email me</a>
     </div>
   </div>
   <br>

@@ -1,0 +1,149 @@
+/*
+Colors used:
+Primary Color (Pale Blue): #F5F7FA;
+Secondary Color (Green): #8DBD45;
+Accent Color (White): #FFFFFF
+*/
+
+body {
+  background-color: #F5F7FA;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 400; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #000000;
+  
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+  color: #000000;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+  color: #000000;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 650;
+  color: #000000;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 550;
+  color: #000000;
+}
+
+.h3Profile {
+  color: #2A4E50;
+
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+  color: #000000;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #000000;
+  font-weight: 600;
+  text-decoration: none; /* No underlining */
+}
+
+#makeGreen {
+  color: #8DBD45;
+}
+
+.weight {
+  font-weight: 500;
+}
+
+.makeFontLight {
+  font-weight: 400;
+}
+
+.Tools {
+  font-size: 0.80em;
+}
+
+footer {
+  background-color: #8DBD45
+}
+
+a:hover,
+a:focus {
+  color: #ffffff;
+  text-decoration: underline; 
+  color: #ffffff;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:active { /* selected link */
+  color: #658830;
+}
+
+.caseStudy {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #2A4E50;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #1b3436; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.caseStudy:hover {
+  opacity: 0.8;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #8DBD45;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #658830; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #000000;
+  text-transform: uppercase;
+  border: 2px solid #000000;
+}
+.button.contact:hover {
+  background-color: #8DBD45;
+  color: #ffffff;
+}
+
+.contactButton {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #8DBD45;
+  color: #000000; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #658830; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+
+/* #projectColor {
+  color:#ffffff
+} */
+
