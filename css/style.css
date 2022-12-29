@@ -5,6 +5,10 @@ Secondary Color (Green): #8DBD45;
 Accent Color (White): #FFFFFF
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #F5F7FA;
   font-family: 'Montserrat', sans-serif;
@@ -13,6 +17,17 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
   
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 10px 0; 
+  box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
+  -webkit-box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
+  -moz-box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
 }
 
 h1, h2, h3, h4 {
@@ -109,6 +124,8 @@ a:active { /* selected link */
   background-color: #8DBD45;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #658830; /* width of the border, type, color */
@@ -142,8 +159,71 @@ a:active { /* selected link */
   transition: 0.2s opacity;
 }
 
-
 /* #projectColor {
   color:#ffffff
 } */
 
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+#alignCenter {
+  text-align: center;
+
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#hero h1 {
+  text-align: center; /* Centers text */
+  
+}
+
+#hero {
+  background-color: #F5F7FA;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+  /* float: left; 
+  margin: 0; */
+
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  /* float: right; */
+}
+
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+main {
+  padding-top: 191.07px;
+}
+
+#contact {
+  text-align: center;
+}
