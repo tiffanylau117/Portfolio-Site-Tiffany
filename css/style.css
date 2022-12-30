@@ -22,6 +22,7 @@ body {
 header {
   position: fixed;
   width: 100%;
+  height: 200px;
   text-align: center;
   background-color: #ffffff;
   padding: 10px 0; 
@@ -72,8 +73,8 @@ a {
   text-decoration: none; /* No underlining */
 }
 
-#makeGreen {
-  color: #8DBD45;
+.makeGreen {
+  color: #8DBD45; /* made Tiffany green */
 }
 
 .weight {
@@ -94,9 +95,9 @@ footer {
 
 a:hover,
 a:focus {
-  color: #ffffff;
+  color: #658830;
   text-decoration: underline; 
-  color: #ffffff;
+  color: #658830;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
@@ -109,6 +110,12 @@ a:active { /* selected link */
   background-color: #2A4E50;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
+  margin: 0 auto;
+  margin-top: -30px;
+  margin-bottom: -30px; 
+  max-width: 600px;
+  display: block;
+  text-align: center;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #1b3436; /* width of the border, type, color */
@@ -124,12 +131,17 @@ a:active { /* selected link */
   background-color: #8DBD45;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  max-width: 600px; 
+  display: block;
+  text-align: center;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 8px;
   border-bottom: 2px solid #658830; /* width of the border, type, color */
   transition: 0.2s opacity;
+  
 }
 
 .button:hover {
@@ -142,10 +154,12 @@ a:active { /* selected link */
   color: #000000;
   text-transform: uppercase;
   border: 2px solid #000000;
+  border-radius: 8px;
+  width: 40%;
 }
 .button.contact:hover {
   background-color: #8DBD45;
-  color: #ffffff;
+  color: #658830;
 }
 
 .contactButton {
@@ -154,7 +168,7 @@ a:active { /* selected link */
   color: #000000; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 8px;
   border-bottom: 2px solid #658830; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
@@ -166,11 +180,12 @@ a:active { /* selected link */
 /* Layout styling */
 
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 #alignCenter {
   text-align: center;
+  margin: 80px 0;
 
 }
 .row {
@@ -180,7 +195,9 @@ a:active { /* selected link */
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: left;
+  font-size: 2.30em;
+  padding-left: 30px; /* Centers text */
   
 }
 
@@ -226,4 +243,22 @@ main {
 
 #contact {
   text-align: center;
+  padding-top: 20px;
+  margin-bottom: -20px; /* fixed unneccesssary bottom margins */
+}
+
+.index {
+  padding: 20px;
+}
+
+.about {
+  padding: 20px;
+}
+
+.copyright {
+  padding: 10px 0;
+}
+
+.profImage {
+border-radius: 50%;
 }
