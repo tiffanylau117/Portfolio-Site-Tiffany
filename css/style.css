@@ -112,15 +112,16 @@ a:active { /* selected link */
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   margin: 0 auto;
-  margin-top: -30px;
-  margin-bottom: -30px; 
-  max-width: 600px;
-  display: block;
+  /* margin-top: -30px;
+  margin-bottom: -30px; button size previous format*/
+  /* max-width: 600px; button sized stetched  */
+  /* display: block; regular state button to be stetched*/
+  display: inline-block;
   text-align: center;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 8px;
   border-bottom: 2px solid #1b3436; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition: 0.4s;
 }
 
 .caseStudy:hover {
@@ -135,7 +136,7 @@ a:active { /* selected link */
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px; 
-  /* width: 600px;  button size stretched*/
+  /* width: 600px;  button size stretched */
   display: inline-block;
   text-align: center;
   padding: 10px;
@@ -221,8 +222,6 @@ a:active { /* selected link */
 
 .logo {
   max-width: 250px;
-  /* float: left; 
-  margin: 0; */
 
 }
 
@@ -317,7 +316,10 @@ height: auto;
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-/* .navigation a:before, .navigation a:after NOT SURE WHY IT'S NOT WORKING 
+
+/* NOT SURE WHY IT'S NOT WORKING 
+
+.navigation a:before, .navigation a:after 
 {
     position: absolute;
     opacity: 0;
@@ -376,6 +378,16 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
+
+  .button {
+    display: inline-block;
+    width: 600px; 
+  }
+
+  .caseStudy {
+    display: inline-block; 
+    width: 600px; 
+  }
 }
 
 /* ==============================
@@ -384,6 +396,13 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
   body {
     font-size: 18px;
+  }
+
+  .button {
+    width: 600px; 
+  }
+  .caseStudy {
+    width: 600px; 
   }
 }
 /* ==============================
