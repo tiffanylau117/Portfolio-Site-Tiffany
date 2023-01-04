@@ -317,37 +317,25 @@ height: auto;
 }
 
 
-/* NOT SURE WHY IT'S NOT WORKING 
+/* NOT SURE WHY IT'S NOT WORKING  */
 
-.navigation a:before, .navigation a:after 
+.pullRight a:before
 {
     position: absolute;
-    opacity: 0;
-    width: 0%;
-    height: 2px;
-    content: '';
-    background: orange;
-    transition: all 0.3s;
-} 
-
-.navigation a:before
-{
+    width: 2px;
+    height: 100%;
     left: 0px;
     top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
 }
 
-.navigation a:after
+.pullRight a:hover:before
 {
-    right: 0px; 
-    bottom: 0px;
-}
-
-.navigation a:hover:before, .navigation a:hover:after
-{
-    opacity: 1;
     width: 100%;
-} */
-
+}
 
 /* ==============================
 Medium devices (640px and larger)
