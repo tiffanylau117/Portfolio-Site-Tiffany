@@ -96,10 +96,9 @@ footer {
 
 a:hover,
 a:focus {
+  color: #658830; 
   color: #658830;
-  text-decoration: underline; 
-  color: #658830;
-  text-decoration: underline; /* Underlining when hovering over a link */
+   /* Underlining when hovering over a link */
 }
 
 a:active { /* selected link */
@@ -316,25 +315,19 @@ height: auto;
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-
-/* NOT SURE WHY IT'S NOT WORKING  */
-
-.pullRight a:before
-{
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    content: '';
-    background: #FFF;
-    opacity: 0.3;
-    transition: all 0.3s;
+.pullRight a:before {
+position: absolute;
+width: 0px;
+height: 13%;
+content: '';
+background: #8DBD45;
+opacity: 0.1;
+transition: all 0.4s;
 }
 
-.pullRight a:hover:before
-{
-    width: 100%;
+.pullRight a:hover:before {
+width: 12%;
+height: 13%
 }
 
 /* ==============================
@@ -376,6 +369,21 @@ Medium devices (640px and larger)
     display: inline-block; 
     width: 600px; 
   }
+
+  .pullRight a:before {
+    position: absolute;
+    width: 0px;
+    height: 18%;
+    content: '';
+    background: #8DBD45;
+    opacity: 0.1;
+    transition: all 0.4s;
+    }
+    
+    .pullRight a:hover:before {
+    width: 7%;
+    height: 18%;
+    }
 }
 
 /* ==============================
@@ -392,6 +400,21 @@ Large devices (1024px or larger)
   .caseStudy {
     width: 600px; 
   }
+
+  .pullRight a:before {
+    position: absolute;
+    width: 0px;
+    height: 18%;
+    content: '';
+    background: #8DBD45;
+    opacity: 0.1;
+    transition: all 0.4s;
+    }
+    
+    .pullRight a:hover:before {
+    width: 5%;
+    height: 18%;
+    }
 }
 /* ==============================
 X-large devices (1440px or larger)
