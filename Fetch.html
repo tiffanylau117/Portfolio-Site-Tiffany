@@ -10,20 +10,24 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <body> 
     <div>
       <header> 
         <div class="container">
-          <a href="index.html"> 
-            <img src="img/Logo.png" alt="Logo" class="logo">
-          </a>
-          <nav>
-        <ul class="navigation"> 
-          <li><a href="index.html">Work</a></li>
-          <li><a href="contact.html">About</a></li>
-          <li><a href="#contact" class="contactButton">Say hello</a></li>
-        </ul>
-          </nav>
+          <div class="myNavtoggle" id="navtoggle"> 
+            <a href="index.html"> 
+              <img src="img/Logo.png" alt="Logo" class="logo">
+            </a>
+            <nav>
+          <ul class="navigation"> 
+            <li><a href="index.html">Work</a></li>
+            <li><a href="contact.html">About</a></li>
+            <li><a href="#contact" class="contactButton">Say hello</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+            </nav>
+          </div>
         </div>
       </header>
     </div>
@@ -31,6 +35,7 @@
 <main>
   <div class="container">
     <div>
+      <br>
       <picture> 
         <source srcset="https://i.imgur.com/b1pAUHz.png" media="(max-width:767px)">
         <img src="img/Fetch/1x_PNG_Images/1x_Fetch feature.png" alt="Fetch project">
@@ -214,6 +219,9 @@
           <h3> Want to chat about design over a good couple of coffee? </h3>
         </div>
       </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
 
 <footer id="contact">
   <div> 
@@ -258,5 +266,4 @@
   </div>
   <p>Copyright Tiffany Lau 2023</p>
 </footer>
-</body>
 </html>

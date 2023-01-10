@@ -22,12 +22,11 @@ body {
 header {
   position: fixed;
   width: 100%;
-  text-align: center;
-  background-color: #ffffff;
+  /* background-color: #ffffff 0.50; */
   padding: 10px 0; 
-  box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
+  /* box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
   -webkit-box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
-  -moz-box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
+  -moz-box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75); */
 }
 
 h1, h2, h3, h4 {
@@ -43,6 +42,7 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 650;
+  padding: 50px;
   color: #000000;
 }
 
@@ -50,6 +50,11 @@ h3 {
   font-size: 1.75em;
   font-weight: 550;
   color: #000000;
+}
+
+.myWork {
+  text-align: center;
+
 }
 
 .h3Profile {
@@ -204,6 +209,7 @@ a:active { /* selected link */
 #hero h1 {
   text-align: center;
   font-size: 2.30em;
+  padding: 150px 0 150px;
   /* padding-left: 30px; Centers text (ONLY IF WANT LEFT ALIGNMENT*/ 
   
 }
@@ -220,19 +226,15 @@ a:active { /* selected link */
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
   /* float: right; */
-}
-
-
-nav > ul > li {
-  display: inline-block;
 }
 
 nav > ul > li > a {
@@ -243,7 +245,7 @@ nav > ul > li > a {
 }
 
 main {
-  padding-top: 191.07px;
+  padding-top: 89.73px;
 }
 
 #contact {
@@ -273,6 +275,53 @@ width: 100%;
 max-width: 100%;
 height: auto;
 }
+
+/* HAMBURGER MENU */
+
+.myNavtoggle li:not(:last-child) {
+  display: none;
+}
+
+.myNavtoggle, .myNavtoggle.responsive {
+  position: relative;
+}
+
+.myNavtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 17px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.myNavtoggle.responsive li  {
+  display: block;
+}
+
+.myNavtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.myNavtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+}
+
+.myNavtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.heroImage {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.heroImage:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+
 
 /* ANIMATIONS */
 
@@ -315,7 +364,7 @@ height: auto;
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-.pullRight a:before {
+/* .pullRight a:before { DEBATING 
 position: absolute;
 width: 0px;
 height: 13%;
@@ -328,7 +377,7 @@ transition: all 0.4s;
 .pullRight a:hover:before {
 width: 12%;
 height: 13%
-}
+} */
 
 /* ==============================
 Medium devices (640px and larger)
@@ -337,12 +386,39 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
+    
+    
   }
 
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    /* min-width: 641px; */
+  } 
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.85em;
+    color: #4a4a4a;
+}
+
+  nav > ul {
+    margin: 0;
+  }
+
+  .myNavtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .myNavtoggle li:last-child {
+    display: none;
   }
 
   .col-md-6 {
@@ -370,7 +446,7 @@ Medium devices (640px and larger)
     width: 600px; 
   }
 
-  .pullRight a:before {
+  /* .pullRight a:before { DEBATING
     position: absolute;
     width: 0px;
     height: 18%;
@@ -383,7 +459,7 @@ Medium devices (640px and larger)
     .pullRight a:hover:before {
     width: 7%;
     height: 18%;
-    }
+    } */
 }
 
 /* ==============================
@@ -394,6 +470,10 @@ Large devices (1024px or larger)
     font-size: 18px;
   }
 
+  header {
+    padding: 0;
+  }
+
   .button {
     width: 600px; 
   }
@@ -401,7 +481,7 @@ Large devices (1024px or larger)
     width: 600px; 
   }
 
-  .pullRight a:before {
+  /* .pullRight a:before { DEBATING
     position: absolute;
     width: 0px;
     height: 18%;
@@ -412,10 +492,32 @@ Large devices (1024px or larger)
     }
     
     .pullRight a:hover:before {
-    width: 5%;
-    height: 18%;
+      width: 5%;
+      height: 18%;
+    } */
+
+    .logo {
+      min-width: 250px;
     }
-}
+
+    nav > ul > li {
+      display: inline-block;
+      /* min-width: 641px; */
+    }
+    
+
+    nav > ul {
+    margin: 1em 0;
+    }
+
+    .myNavtoggle li:not(:last-child) {
+      display: inline-block;
+    }
+
+    .myNavtoggle li:last-child {
+      display: none;
+    }
+  }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
