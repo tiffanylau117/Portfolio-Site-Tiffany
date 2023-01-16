@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top ↑</button>
 <body> 
   <div>
     <header> 
@@ -21,7 +23,7 @@
           </a>
           <nav>
         <ul class="navigation"> 
-          <li><a href="index.html">Work</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="contact.html">About</a></li>
           <li><a href="#contact" onclick="menuToggle()" class="contactButton">Say hello</a></li>
           <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
@@ -35,45 +37,48 @@
   <main> 
   <div class="container"><!-- Whole section block--> 
       <div><!-- Container/wrapper-->
-        <h1> About </h1>
+        <h1>  </h1>
       </div>
   </div>
 
   <div class="container"><!-- Whole section block--> 
     <div><!-- Container/wrapper-->
-      <picture> 
+      <picture class="col-md-6 col-lg-8 col-xl-4"> 
         <source srcset="https://i.imgur.com/YCsZ6F9.jpg" media="(max-width:767px)">
-        <img src="img/Prof-image-min.jpg" class="profImage" alt="Fetch project">
+        <img src="img/Prof-image-min.jpg" class="profImage" alt="profile">
        </picture>
-      <div><!--Row for columns-->
-        <div><!--Columns -->
+      <div class="col-md-6 col-lg-8 col-xl-4"><!--Row for columns-->
+        <div class=""><!--Columns -->
           <h2> My Journey </h2>
           <p> 
-            I am a product designer & front end developer based in San Francisco, Bay Area.
+            I am a product designer with front-end development skills based in San Francisco, Bay Area.
           </p>
           <p> 
-            I have fashion styling/design & customer service background. Having published in 4 indie magazines, I have expertise in translating abstract concepts into final designs, from paper mood boards to digital prints. Along with the experience working with clients in fashion, and as an in-house employee in customer service, it’s been a long journey improving people’s experiences. It was also my innate curiosity that drove me
-            to transition to another form of design with new approaches & challenges.
-            As a product designer, I'm interested in the importance of incorporating user- focused approaches, solution-based methods, and harmonic designs.
+            I have former fashion & customer service background. Having published in 4 indie magazines, I have expertise in translating abstract concepts into final designs, from paper mood boards to digital prints. Along with the experience working with clients in fashion, and as 
+            an in-house employee in customer service, it’s been a long journey improving people’s experiences. It was my innate curiosity that drove me to transition to another form of design with new approaches & challenges.
           </p>
           <p> 
-            Feel free to connect and chat with me about design!
+            As a product designer, I believe in the importance of incorporating user-focused approaches, solution-based methods, and harmonic designs.
           </p>
-          <a href="https://drive.google.com/file/d/1z22mzbWHNbRj4dW4MKyBaL2HxDRyrRyt/view?usp=share_link" class="button" target="_blank">View Resumé</a>
+          <p> 
+            Besides designing, I'm a baker, video gamer, traveler & fitness enthusiast.   
+            Feel free to connect and chat with me about design or any of my hobbies!
+          </p>
+          <a href="https://drive.google.com/file/d/1z22mzbWHNbRj4dW4MKyBaL2HxDRyrRyt/view?usp=share_link" class="button" id="viewResume" target="_blank">View Resumé</a>
           <h2> Skills & Tools </h2>
           <h3 class="makeGreen"> Relevant Skills </h3>
           <ul> 
-            <li> User research: Quantitative & qualitative, explorative & evaluative. Competitive Analysis, Information Architecture</li>
-            <li> Visual hierarchy: Moodboarding & style guides </li>
-            <li> User stories: User flows, journey maps, sitemaps, user persona </li>
-            <li> Wireframing: Low, mid, high fidelity </li>
+            <li> User Research: Quantitative & Qualitative, Explorative & Evaluative. Competitive Analysis, Information Architecture</li>
+            <li> Visual Hierarchy: Moodboarding & Style guides </li>
+            <li> User Stories: User flows, Journey maps, Sitemaps, User persona </li>
+            <li> Wireframing: Low, mid, high-fidelity </li>
             <li> Prototyping </li>
           </ul>
           <h3 class="makeGreen"> Technologies I use </h3>
           <ul>
             <li> Figma/Figjam </li>
             <li> Adobe XD Photoshop/Illustrator </li>
-            <li> Balsamic </li>
+            <li> Balsamiq </li>
             <li> Useberry </li>
             <li> Miro </li>
             <li> Marvel </li>
@@ -81,6 +86,9 @@
             <li> HTML5 </li>
             <li> CSS </li>
             <li> JavaScript </li>
+            <br> <!-- Only way to separate elements-->
+            <br> <!-- Only way to separate elements-->
+            <br> <!-- Only way to separate elements-->
           </ul>
         </div>
       </div>
@@ -88,11 +96,13 @@
   </div>
 
   <div class="container" id="alignCenter"> 
-    <h3> Want to chat about design over a good couple of coffee? </h3> 
+      <!-- <h3> why is it not working </h3>  -->
+      <h3> Want to chat about design over a good cup of coffee?
+      </h3>
   </div>
 </main>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>  
 </body>
 
   <footer id="contact">
@@ -100,15 +110,12 @@
       <h2>Say Hello</h2>
       <p> 
         Get in touch!  
-        <br>
-        <br>
-        Send an email
       </p>
       <div>
         <a href="mailto:tiffanylau117@gmail.com" class="button contact">Email me</a>
       </div>
     </div>
-    <br>
+  
     <div>
         <!--Social Media Layout and Placeholders-->
         <a href="https://www.linkedin.com/in/tiffanylau117/" target="_blank"> 
@@ -137,6 +144,6 @@
           </svg>
         </a>  
   </div>
-  <p>Copyright Tiffany Lau 2023</p>
+  <p class="copyRight">© 2023 Tiffany Lau. All rights reserved</p>
   </footer>
   </html>

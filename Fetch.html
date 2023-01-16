@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top ↑</button>
   <body> 
     <div>
       <header> 
@@ -21,7 +23,7 @@
             </a>
             <nav>
           <ul class="navigation"> 
-            <li><a href="index.html">Work</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="contact.html">About</a></li>
             <li><a href="#contact" class="contactButton">Say hello</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
@@ -33,14 +35,16 @@
     </div>
 
 <main>
-  <div class="container">
-    <div>
-      <br>
-      <picture> 
-        <source srcset="https://i.imgur.com/b1pAUHz.png" media="(max-width:767px)">
-        <img src="img/Fetch/1x_PNG_Images/1x_Fetch feature.png" alt="Fetch project">
-      </picture>
-    </div>
+  <div id="fetch"> <!--Separated fetch image with the container class -->
+    <br>
+    <br>
+    <picture> 
+      <source srcset="https://i.imgur.com/b1pAUHz.png" media="(max-width:767px)">
+      <img src="img/Fetch/1x_PNG_Images/1x_Fetch feature.png" alt="Fetch project">
+    </picture>
+  </div>
+
+  <div class="container" id="caseStudy">
     <div>
       <h1> How it started </h1>
       <p>
@@ -171,7 +175,7 @@
       </p>
       <picture> 
         <source srcset="https://i.imgur.com/TuW6wjK.jpg" media="(max-width:767px)">
-        <img src="img/Fetch/Moodboard.jpg" alt="Fetch project">
+        <img src="img/Fetch/1x_PNG_Images/Moodboard.jpg" alt="Fetch project">
       </picture>
       <h2> Style Guide </h2>
       <picture> 
@@ -214,28 +218,30 @@
         <a href="https://www.figma.com/proto/S26rQVXSfFUFm6wbr6jVTL/Fetch-web-app?node-id=0%3A1&viewport=416%2C910%2C0.22&scaling=scale-down&starting-point-node-id=2%3A3" target="_blank" class="button">Check out Prototype </a>
         <br>
         <a href="https://www.behance.net/gallery/158589391/UXUI-Case-Study-Fetch" target="_blank" class="caseStudy"> Full Case Study at Behance</a>
+      </div>
+  </div> 
 
-        <div class="container" id="alignCenter"> 
-          <h3> Want to chat about design over a good couple of coffee? </h3>
+        <div id="alignCenter"> 
+          <br>
+          <h3> Want to chat about design over a good couple of coffee?</h3>
         </div>
       </main>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>  
+    </div>
 </body>
 
 <footer id="contact">
   <div> 
     <h2>Say Hello</h2>
     <p> 
-      Get in touch! 
-      <br>
-      Send an email
-    </p>
+      Get in touch!
+    </p> 
     <div>
       <a href="mailto:tiffanylau117@gmail.com" class="button contact" id="">Email me</a>
     </div>
   </div>
-  <br>
+  
   <div>
       <!--Social Media Layout and Placeholders-->
       <a href="https://www.linkedin.com/in/tiffanylau117/" target="_blank"> 
@@ -264,6 +270,6 @@
         </svg>
       </a>  
   </div>
-  <p>Copyright Tiffany Lau 2023</p>
+  <p class="copyRight">© 2023 Tiffany Lau. All rights reserved</p>
 </footer>
 </html>
