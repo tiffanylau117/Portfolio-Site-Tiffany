@@ -1,7 +1,7 @@
 /*
 Colors used:
 Primary Color (Pale Blue): #F5F7FA;
-Secondary Color (Green): #8DBD45;
+Secondary Color (Green): #8DBD45; 79A13C
 Accent Color (White): #FFFFFF
 */
 
@@ -21,9 +21,10 @@ body {
 }
 
 header {
-  position: fixed;
+  position: fixed !important;
   width: 100%;
-  /* background-color: #ffffff 0.50; */
+  z-index: 100;
+  /* background-color: #ffffff; */
   padding: 10px 0; 
   /* box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
   -webkit-box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
@@ -78,7 +79,7 @@ a {
 }
 
 .makeGreen {
-  color: #8DBD45; /* made Tiffany green */
+  color: #79A13C; /* made Tiffany green */
 }
 
 .weight {
@@ -135,8 +136,8 @@ a:active { /* selected link */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #8DBD45;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
+  color: #000000; /* needed to override the default link color */
+  font-weight: 500;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px; 
@@ -145,7 +146,7 @@ a:active { /* selected link */
   text-align: center;
   padding: 10px;
   border-radius: 8px;
-  border-bottom: 2px solid #658830; /* width of the border, type, color */
+  box-shadow: 2px 2px 3px #999;
   transition: 0.4s;
   
 }
@@ -161,7 +162,8 @@ a:active { /* selected link */
   text-transform: uppercase;
   border: 2px solid #000000;
   border-radius: 8px;
-  width: 40%;
+  box-shadow: none;
+  width: 30%;
   
 }
 .button.contact:hover {
@@ -207,11 +209,6 @@ a:active { /* selected link */
   background-color: #8DBD45; /* Add a dark-grey background on hover */
   opacity: 0.8;
 }
-
-
-/* #projectColor {
-  color:#ffffff
-} */
 
 /* Layout styling */
 
@@ -310,6 +307,7 @@ height: auto;
 .heroImage:hover {
 	-webkit-transform: scale(1.05);
 	transform: scale(1.05);
+  
 }
 
 /* HAMBURGER MENU */
@@ -450,6 +448,7 @@ Medium devices (640px and larger)
   } 
 
   nav > ul > li > a {
+    position: inline-block;
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
@@ -467,6 +466,16 @@ Medium devices (640px and larger)
 
   .myNavtoggle li:last-child {
     display: none;
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+    /* background-color: #ffffff 0.50; */
+    padding: 10px 0; 
+    /* box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
+    -webkit-box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
+    -moz-box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75); */
   }
 
   .col-md-6 {
@@ -511,21 +520,6 @@ Medium devices (640px and larger)
     text-align: center;
     
   }
-
-  /* .pullRight a:before { DEBATING
-    position: absolute;
-    width: 0px;
-    height: 18%;
-    content: '';
-    background: #8DBD45;
-    opacity: 0.1;
-    transition: all 0.4s;
-    }
-    
-    .pullRight a:hover:before {
-    width: 7%;
-    height: 18%;
-    } */
 }
 
 /* ==============================
@@ -611,6 +605,16 @@ Large devices (1024px or larger)
     text-align: center;
     padding: 0 300px;
     
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+    /* background-color: #ffffff 0.50; */
+    padding: 10px 0; 
+    /* box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
+    -webkit-box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
+    -moz-box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75); */
   }
 }
   
