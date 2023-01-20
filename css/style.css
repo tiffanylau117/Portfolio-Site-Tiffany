@@ -13,7 +13,7 @@ body {
   background-color: #F5F7FA;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 400; /* Sets the font weight to 300 */
+  font-weight: 350; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   padding: 0px;
   color: #000000;
@@ -73,7 +73,7 @@ img {
 }
 
 a {
-  color: #000000;
+  color: #4a4a4a;
   font-weight: 600;
   text-decoration: none; /* No underlining */
 }
@@ -209,6 +209,33 @@ a:active { /* selected link */
   background-color: #8DBD45; /* Add a dark-grey background on hover */
   opacity: 0.8;
 }
+
+ul#nav.navigation {
+  list-style: none;
+  position: relative;
+  .. // other styling you want like color, font spacing etc.
+  }
+  ul.navigation li {
+  float: left;
+  color: #4a4a4a;
+  .. // other styling like border, text color, etc.
+  }
+  
+  ul.navigation li a {
+  display: inline;  // you have the menu running horiz on your page
+  .. // other stylings
+  }
+  
+  ul.navigation li span {
+  float: left;
+  position: absolute;
+  display: none;
+  }
+  
+  ul.navigation li:hover span {
+  display: block; // list submenu vertically
+  }
+
 
 /* Layout styling */
 
