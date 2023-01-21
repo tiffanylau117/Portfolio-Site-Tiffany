@@ -14,23 +14,31 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top ↑</button>
 </head>
-  <body> 
+<body> 
     <div>
       <header> 
-        <div class="container">
+        <div class="container"> 
           <div class="myNavtoggle" id="navtoggle"> 
             <a href="index.html"> 
-              <img src="img/Logo.png" alt="Logo" class="logo">
+             <img src="img/Logo.png" alt="Logo" class="logo">
             </a>
-            <nav>
+           <nav> 
           <ul class="navigation"> 
-            <li><a href="index.html">Work</a></li>
-            <li><a href="contact.html">About</a></li>
-            <li><a href="#contact" class="contactButton">Say hello</a></li>
+            <li><a href="index.html" class="index">Work ↓</a>
+             <div class="dropdown"> 
+              <ul>
+                <span>
+                  <a href="#Work" class="index">Fun Projects</a>
+                </span>
+              </ul>
+             </div>
+            </li>
+            <li><a href="contact.html" class="about">About</a></li>
+            <li><a href="#contact" class="contactButton" onclick="menuToggle()">Say hello</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
             </nav>
-          </div>
+          </div> 
         </div>
       </header>
     </div>

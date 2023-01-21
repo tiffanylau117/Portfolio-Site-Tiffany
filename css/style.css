@@ -16,8 +16,7 @@ body {
   font-weight: 350; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   padding: 0px;
-  color: #000000;
-  
+  color: #000000; 
 }
 
 header {
@@ -30,6 +29,46 @@ header {
   -webkit-box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
   -moz-box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75); */
 }
+
+/* Hero animation */
+
+svg#freepik_stories-designer-girl:not(.animated) 
+.animable {
+  opacity: 0;
+}
+svg#freepik_stories-designer-girl.animated #freepik--Cat--inject-1--inject-206 {
+  animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideLeft,1.5s Infinite linear floating;
+  animation-delay: 0s,1s;}svg#freepik_stories-designer-girl.animated #freepik--Character--inject-1--inject-206 {
+  animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedRight,1.5s Infinite linear wind;
+  animation-delay: 0s,1s;
+}            
+
+svg#freepik_stories-designer-girl.animated{
+  margin-top: -50px;
+}
+  
+  @keyframes slideLeft {                
+    0% { opacity: 0; transform: translateX(-30px);}                
+    100% { opacity: 1; transform: translateX(0);}
+  }                    
+  
+  @keyframes floating { 
+    0% { opacity: 1; transform: translateY(0px);}                
+    50% { transform: translateY(-10px);} 
+    100% { opacity: 1; transform: translateY(0px);} 
+  }                    
+  
+  @keyframes lightSpeedRight { 
+    from { transform: translate3d(50%, 0, 0) skewX(-20deg); opacity: 0;}              
+    60% { transform: skewX(10deg); opacity: 1; } 
+    80% { transform: skewX(-2deg);} 
+    to { opacity: 1; transform: translate3d(0, 0, 0);}
+  }          
+
+   @keyframes wind { 0% { transform: rotate( 0deg );} 
+    25% { transform: rotate( 1deg );} 
+    75% { transform: rotate( -1deg );}
+   }        
 
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -55,7 +94,6 @@ h3 {
 
 .myWork {
   text-align: center;
-
 }
 
 .h3Profile {
@@ -88,6 +126,7 @@ a {
 
 .makeFontLight {
   font-weight: 400;
+  font-size: 0.75em;
 }
 
 .Tools {
@@ -136,8 +175,9 @@ a:active { /* selected link */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #8DBD45;
-  color: #000000; /* needed to override the default link color */
-  font-weight: 500;
+  background-image: linear-gradient(to right, #8DBD45 0%, #79A13C 51%, #658830 100%);
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px; 
@@ -145,16 +185,66 @@ a:active { /* selected link */
   display: inline-block;
   text-align: center;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 115px;
   box-shadow: 2px 2px 3px #999;
   transition: 0.4s;
-  
 }
 
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
+/* Animated button CSS
+
+.button {
+  background-color: transparent;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Montserrat",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover,
+.button:active {
+  outline: 0;
+}
+
+.button:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button:before {
+  background-color: #8DBD45;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button:hover:before {
+  background-color: #658830;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 16px 32px;
+  }
+} */
 
 .button.contact {
   background-color: transparent;
@@ -163,9 +253,9 @@ a:active { /* selected link */
   border: 2px solid #000000;
   border-radius: 8px;
   box-shadow: none;
-  width: 30%;
-  
+  width: 30%; 
 }
+
 .button.contact:hover {
   background-color: #8DBD45;
   color: #658830;
@@ -213,17 +303,17 @@ a:active { /* selected link */
 ul#nav.navigation {
   list-style: none;
   position: relative;
-  .. // other styling you want like color, font spacing etc.
+  /* .. // other styling you want like color, font spacing etc. */
   }
   ul.navigation li {
   float: left;
   color: #4a4a4a;
-  .. // other styling like border, text color, etc.
+  /* .. // other styling like border, text color, etc. */
   }
   
   ul.navigation li a {
-  display: inline;  // you have the menu running horiz on your page
-  .. // other stylings
+  display: inline;  
+  /* // you have the menu running horiz on your page.. // other stylings */
   }
   
   ul.navigation li span {
@@ -233,7 +323,8 @@ ul#nav.navigation {
   }
   
   ul.navigation li:hover span {
-  display: block; // list submenu vertically
+  display: block; 
+  /* // list submenu vertically */
   }
 
 
@@ -246,7 +337,6 @@ ul#nav.navigation {
 #alignCenter {
   text-align: center;
   margin: 80px 0;
-  
 }
 
 .row {
@@ -255,15 +345,13 @@ ul#nav.navigation {
 
 .row { 
   padding-bottom: 25px; 
-
  }
 
 #hero h1 {
   text-align: center;
   font-size: 2.30em;
-  padding: 80px 0px 80px;
-  /* padding-left: 30px; Centers text (ONLY IF WANT LEFT ALIGNMENT*/ 
-  
+  padding: 10px 0px 0px;
+  /* padding-left: 30px; Centers text (ONLY IF WANT LEFT ALIGNMENT*/  
 }
 
 #hero {
@@ -279,7 +367,6 @@ ul#nav.navigation {
 
 .logo {
   max-width: 75px;
-  
 }
 
 nav > ul {
@@ -352,7 +439,6 @@ height: auto;
   right: 0;
   top: 17px;
   font-size: 20px;
-  
 }
 
 .myNavtoggle.responsive li  {
@@ -442,7 +528,6 @@ height: auto;
   transform: scale(1.1);
   /* opacity: 50%;
   transition: 0.4s  */
-  
 }
 
 /* ==============================
@@ -452,14 +537,25 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
+    position: fixed;
+    width: 100%;
+    /* background-color: #ffffff 0.50; */
+    padding: -10px 0; 
+    /* box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
+    -webkit-box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
+    -moz-box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75); */
   }
 
   #hero h1 {
-    text-align: center;
-    font-size: 2.30em;
-    padding: 130px 0px 130px;
+    text-align: left;
+    font-size: 2em;
+    padding: 75px 0px 75px;
+    margin-left: 50px;
     /* padding-left: 30px; Centers text (ONLY IF WANT LEFT ALIGNMENT*/ 
-    
+  }
+
+  svg#freepik_stories-designer-girl.animated{
+    margin-top: 10px;
   }
 
   nav {
@@ -493,16 +589,6 @@ Medium devices (640px and larger)
 
   .myNavtoggle li:last-child {
     display: none;
-  }
-
-  header {
-    position: fixed;
-    width: 100%;
-    /* background-color: #ffffff 0.50; */
-    padding: 10px 0; 
-    /* box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
-    -webkit-box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75);
-    -moz-box-shadow: 4px 5px 19px 1px rgba(128,128,128,0.75); */
   }
 
   .col-md-6 {
@@ -545,7 +631,6 @@ Medium devices (640px and larger)
 
   #alignCenter {
     text-align: center;
-    
   }
 }
 
@@ -561,6 +646,10 @@ Large devices (1024px or larger)
     padding: 0;
   }
 
+  svg#freepik_stories-designer-girl.animated{
+    margin-top: -50px;
+  }
+
   .button {
     width: 300px;
     text-align: center; 
@@ -574,21 +663,6 @@ Large devices (1024px or larger)
     padding-right: 250px;
     padding-left: 250px;
   }
-
-  /* .pullRight a:before { DEBATING
-    position: absolute;
-    width: 0px;
-    height: 18%;
-    content: '';
-    background: #8DBD45;
-    opacity: 0.1;
-    transition: all 0.4s;
-    }
-    
-    .pullRight a:hover:before {
-      width: 5%;
-      height: 18%;
-    } */
 
     .logo {
       min-width: 150px;
@@ -616,7 +690,10 @@ Large devices (1024px or larger)
     }
 
     #hero h1 {
-      padding: 150px 150px 150px;
+      font-size: 2.10em;
+      text-align: left;
+      padding: 130px 10px 120px;
+      /* margin-left: 50px; */
     }
 
     .profImage {
