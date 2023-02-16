@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiffany's Portfolio</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top ↑</button>
+</head>
+<body> 
+    <div>
+      <header> 
+        <div class="container"> 
+          <div class="myNavtoggle" id="navtoggle"> 
+            <a href="index.html"> 
+             <img src="img/Logo.png" alt="Logo" class="logo">
+            </a>
+            <nav role="navigation">
+              <ul class="navigation"> 
+                <li><a href="index.html" class="index">Projects</a></li>
+                <li><a href="art.html" class="index">Art</a></li>
+                <li><a href="contact.html" class="about">About</a></li>
+                <li><a href="#contact" class="contactButton" onclick="menuToggle()">Say hello</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i></i></a></li>
+              </ul>
+  
+              <div id="menuToggle">
+              <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+              <ul id="menu">
+                <a href="index.html"><li>Projects</li></a>
+                  <ul><a href="#"><li>Art</li></a></ul>
+                <a href="contact.html"><li>About</li></a>
+                <a href="#contact"><li>Say Hello</li></a>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i></i></a></li>
+              </ul>
+              </div>
+            </nav>
+          </div> 
+        </div>
+      </header>
+    </div>
+
+<main>
+  <div id="fetch"> <!--Separated fetch image with the container class -->
+    <br>
+    <br>
+    <picture> 
+      <source srcset="https://i.imgur.com/KP6ycZN.png" media="(max-width:767px)">
+      <img src="img/Giver/1x_png/product_feature.png" alt="bettermind project">
+    </picture>
+  </div>
+
+  <div class="container" id="caseStudy">
+    <div>
+      <h1> Overview </h1>
+      <p> 
+        This was a 2nd place winning project proposal from TH.0 Argitech hackathon that lasted 2 days. 
+        The design sprint was first prefaced with challenges to choose from. This design sprint consisted of conceptualizing, brainstorming, designing, &amp; then presentations. 
+        I contributed to this project by brainstorming possible solutions, designing the user interface.
+      </p>
+      <picture> 
+        <source srcset="https://i.imgur.com/2fmliB9.png" media="(max-width:767px)">
+        <img src="img/Giver/1x_png/design_process.png" alt="Fetch project">
+      </picture>
+      <h2> About Giver </h2>
+      <p> Giver is a food donation mobile app for households, food services and retails to make donations. This app connects them
+        to existing food banks to feed communities that are in need.
+      </p>
+      <h2> Problem </h2>
+      <p> As many as 828 million people (10% of the global population)
+          still go hungry. 900 million tons of food are discarded every year worldwide.</p> 
+      <p>
+        The challenge is <b> reducing food waste to help prevent hunger in our communities. </b>
+          Even if it's a small step of the way, there are questions to ask. How can we use our technological advances to 
+          help connect with existing resources that we have today? This is what we came up with.
+      </p>
+      <h2> Our Solution </h2>
+      <p> 
+        Our solution is to offer a personal and a organization portal where you could make food donations to communities that are in need. These are the features
+        that we decided are vital to help prevent hunger in communities. 
+      </p>
+      <li><b> Personal/Organization portal </b></li>
+      <li><b> List of local associations </b></li>
+      <li><b> Integrated map </b></li>
+      <li><b> Carbon wallet </b></li>
+      <li><b> Education </b></li>
+      <h2> Defining the Business Model </h2>
+      <h3> The Research </h3>
+      <p> so what if there's a personal and a organization portal? Why did we care 
+        to include that navigational element/feature? 
+        <a href="https://www.weforum.org/agenda/2021/03/global-food-waste-solutions/"> Source </a>
+      </p>
+      <picture> 
+        <source srcset="https://i.imgur.com/UTXzyNt.png" media="(max-width:767px)">
+        <img src="img/Giver/1x_png/business_model.png" alt="Fetch project">
+      </picture>
+      <p> We found that food banks help provide low-income families a 
+        convenient way to access complete and balanced nutrition, such as eating healthy,
+      tasty foods that they can't easily afford. </p>
+      <p> 1 million tons of food is wasted every year around the world. And that is by both parties; the <b> consumer and the organizations. </b>
+        <a href="https://www.riseagainsthunger.org/articles/fao-reports-828-million-face-hunger/#:~:text=As%20many%20as%20828%20million,of%20hunger%20and%20food%20insecurity."> Source </a>
+      </p>
+      <picture> 
+        <source srcset="https://www.fix.com/assets/content/15725/food-waste-around-the-world.png" media="(max-width:767px)">
+        <img src="img/Giver/1x_png/food_waste.png" alt="Fetch project">
+      </picture>
+      <h2> Developing the Roadmap </h2>
+      <p> We went through 2 hours of prioritizing the MVP, filtering out <b> the wants vs the needs. </b> Next, we 
+        developed the phases this app was going to go through theoretically for future development if given more time. Here are our collaborative
+        brainstorm of our MVP.  
+      </p>
+      <picture> 
+        <source srcset="https://i.imgur.com/0l7IGTR.png" media="(max-width:767px)">
+        <img src="img/Giver/1x_png/roadmap.png" alt="Fetch project">
+      </picture>
+      <picture> 
+        <source srcset="https://i.imgur.com/GcWShqV.png" media="(max-width:767px)">
+        <img src="img/Giver/1x_png/mvp.png" alt="Fetch project">
+      </picture>
+      <h2> Product Features </h2>
+      <p> These are our final product features that will serve the app. 
+      </p>
+      <picture> 
+        <source srcset="https://i.imgur.com/YGUStmv.png" media="(max-width:767px)">
+        <img src="img/Giver/1x_png/features.png" alt="Fetch project">
+      </picture>
+      <h2> User Flow </h2>
+      <p> We created a fluid combined user flow that accounted the driver to collect the donated food. 
+      </p>
+      <picture> 
+        <source srcset="https://i.imgur.com/c0ELBln.png" media="(max-width:767px)">
+        <img src="img/Giver/1x_png/user_flow.png" alt="Fetch project">
+      </picture>
+      <h2> Wireframes </h2>
+      <h3> Low-Fidelity </h3>
+      <p> I was in charge of the low-fidelity wireframes. I kept the fluidity of the screens where the key 
+        features lived.  
+      </p>
+      <picture> 
+        <source srcset="https://i.imgur.com/h0b6khX.png" media="(max-width:767px)">
+        <img src="img/Giver/1x_png/low-fis.png" alt="Fetch project">
+      </picture>
+      <h2> Visual Design </h2>
+      <h3>Style Guide </h3> 
+      <p> We got inspired by this warm color palette that exemplifies agriculture, farm and produce. 
+        View the inspiration <a href="https://www.behance.net/gallery/147950943/AgroBavia-Identidade-Visual?tracking_source=search_projects_recommended%7Cui+templates+agriculture" target="blank_">here</a>
+      </p> 
+      <picture> 
+        <source srcset="https://i.imgur.com/W0fcgnI.png" media="(max-width:767px)">
+        <img src="img/Giver/1x_png/style_guide.png" alt="Fetch project">
+      </picture>
+      <h2> High-Fidelity </h2>
+      <p> After establishing the visual design component. We moved on to completing the 
+        high-fidelity wireframes. 
+      </p>
+      <picture> 
+        <source srcset="https://i.imgur.com/K170Yks.png" media="(max-width:767px)">
+        <img src="img/Giver/1x_png/high-fis.png" alt="Fetch project">
+      </picture>
+      <h2> Final Design </h2>
+      <h3> Mockups </h3>
+      <p>
+        We split up the low-fidelity wireframes by the user flow that we created. I was in charge of the onboarding, personal assessment and user homepage. This was a challenging process because we were under time constraints. 
+      </p>
+      <picture>
+        <source srcset="https://i.imgur.com/sEiX9gi.png" media="(max-width:767px)">
+        <img src="img/Giver/1x_png/mockups.png" alt="Fetch project">
+      </picture>
+      <h2> Retrospective </h2>
+      <p> My thoughts and challenges I’ve faced during this project
+      </p>
+      <h3> Thoughts </h3>
+      <p> I partnered with non-technical cross-functional roles and got to learn the business aspect 
+        that comes with design production. I got to learn what was possible and not with the development side.
+        There were certain features that we had to keep simple because of the 
+        complexity of development. 
+      </p>
+        <h3> Challenges </h3>
+        <p> This project was trickier than others because of our timezone differences but it worked out 
+          in the end. Discussing the wanted vs needed and feasible solutions was a challenge as the complexity of development needed to be accounted for.
+        <h3> What I learned </h3>
+        <p> 
+          When generating ideas and brainstorming solutions, I learned a lot by trying to problem. I asked questions like, "How can the technologies we have today benefit the communities in need?" I asked. How can we provide people access to technology if they don't have it?" I also designed the Giver logo and color palette. My visual design skills are increasing as I get more experience with design patterns and visual hierarchy alignment.
+        </p>
+        </p>
+        <a href="https://www.figma.com/proto/JS7s1iLfTTgvAN7zJGtZfm/Agritech-Hackaton?page-id=1%3A171&node-id=668%3A2307&viewport=372%2C355%2C0.08&scaling=min-zoom&starting-point-node-id=668%3A2307&show-proto-sidebar=1" target="_blank" class="button"> Check out Prototype </a>
+        <h2 class="alignCenter"> Thanks for stopping by! </h2>
+      </div>
+  </div> 
+
+        <div class="alignCenter"> 
+          <br>
+          <h3> Want to chat about design over a good couple of coffee?</h3>
+        </div>
+      </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>  
+</body>
+
+<!--FOOTER-->
+<footer id="contact">
+  <div> 
+    <h2>Say Hello</h2>
+    <p> 
+      Get in touch!
+    </p> 
+    <div>
+      <a href="mailto:tiffanylau117@gmail.com" class="button contact" id="">Email me</a>
+    </div>
+  </div>
+  
+  <div>
+      <!--Social Media Layout and Placeholders-->
+      <a href="https://www.linkedin.com/in/tiffanylau117/" target="_blank"> 
+        <xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN''http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g>
+              <path d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z"/>
+              <path d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   
+              c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    
+              M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   
+              C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   
+              c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   
+              c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z"/>
+           </g>
+        </svg> 
+        </xml>
+      </a>
+      <a href="https://www.behance.net/tiffany_lau" target="_blank"> 
+        <xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN''http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_2" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g>
+              <path d="M38.031,27.257c-3.174,0-3.615,3.168-3.615,3.168h6.748C41.164,30.425,41.207,27.257,38.031,27.257z"/>
+              <path d="M22.721,30.425h-5.982v5.492h5.296c0.09,0,0.225,0.002,0.383,0c0.852-0.02,2.467-0.268,2.467-2.67   C24.885,30.396,22.721,30.425,22.721,30.425z"/>
+              <path d="M28.348,5.101c-13.6,0-24.625,11.023-24.625,24.623c0,13.6,11.025,24.625,24.625,24.625   c13.598,0,24.623-11.025,24.623-24.625C52.971,16.125,41.945,5.101,28.348,5.101z M33.531,20.231h8.477v2.53h-8.477V20.231z    
+              M29.246,33.503c0,6.271-6.525,6.064-6.525,6.064h-5.982h-0.175h-4.535V19.021h4.535h0.175h5.982c3.248,0,5.812,1.794,5.812,5.47   
+              c0,3.676-3.135,3.91-3.135,3.91C29.531,28.401,29.246,33.503,29.246,33.503z M45.104,33.167H34.457   c0,3.816,3.615,3.576,3.615,3.576c3.414,0,3.295-2.211,3.295-2.211h3.617c0,5.867-7.033,5.465-7.033,5.465   c-8.436,0-7.893-7.855-7.893-7.855s-0.008-7.893,7.893-7.893C46.268,24.249,45.104,33.167,45.104,33.167z"/>
+              <path d="M24.174,24.81c0-2.137-1.453-2.137-1.453-2.137h-0.77h-5.212v4.584h5.611C23.318,27.257,24.174,26.946,24.174,24.81z"/>
+          </g>
+        </svg>
+        </xml>
+      </a> 
+      <a href="https://github.com/tiffanylau117" target="_blank"> 
+        <svg 
+        xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="60" height="60"
+        viewBox="0 0 30 30">
+        <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+        ></path>
+        </svg>
+    </a>  
+  </div>
+  <p> Built with &#x2661; by Tiffany Lau </p>
+  <p class="copyRight">© 2023 Tiffany Lau. All rights reserved</p>
+</footer>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiffany's Portfolio</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top ↑</button>
+</head>
+<body> 
+    <div>
+      <header> 
+        <div class="container"> 
+          <div class="myNavtoggle" id="navtoggle"> 
+            <a href="index.html"> 
+             <img src="img/Logo.png" alt="Logo" class="logo">
+            </a>
+            <nav role="navigation">
+              <ul class="navigation"> 
+                <li><a href="index.html" class="index">Projects</a></li>
+                <li><a href="art.html" class="index">Art</a></li>
+                <li><a href="contact.html" class="about">About</a></li>
+                <li><a href="#contact" class="contactButton" onclick="menuToggle()">Say hello</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i></i></a></li>
+              </ul>
+  
+              <div id="menuToggle">
+              <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+              <ul id="menu">
+                <a href="index.html"><li>Projects</li></a>
+                  <ul><a href="#"><li>Art</li></a></ul>
+                <a href="contact.html"><li>About</li></a>
+                <a href="#contact"><li>Say Hello</li></a>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i></i></a></li>
+              </ul>
+              </div>
+            </nav>
+          </div> 
+        </div>
+      </header>
+    </div>
+
+<main>
+  <div id="fetch"> <!--Separated fetch image with the container class -->
+    <br>
+    <br>
+    <picture> 
+      <source srcset="https://i.imgur.com/iZg1jN0.png" media="(max-width:767px)">
+      <img src="img/BetterMind/product_feature.png" alt="bettermind project">
+    </picture>
+  </div>
+
+  <div class="container" id="caseStudy">
+    <div>
+      <h1> Overview </h1>
+      <p> 
+        This was a 2nd place winning project proposal from Girls in Tech-Hacking for Humanity 2022 hackathon that lasted 3 days. 
+        The design sprint was first prefaced with business problem statements and consisted of conceptualizing, brainstorming, designing, testing &amp; then presentations. 
+        I contributed to this project as the UX/UI Designer.
+      </p>
+      <h2> About BetterMind </h2>
+      <p> BetterMind is a mobile app with a personal portal for DBSA (Depression and Bipolar Support Alliance). Taking the extensive resources provided by DBSA and tailoring to create a more personal, comprehensive and accessible platform for potential users.
+      </p>
+      <h2> Problem </h2>
+      <p> According to the CDC, <b> more than 50% of Americans will be diagnosed with a mental illness or disorder at some point in their lifetime. </b> With the rising costs of healthcare and a shortage of therapists, many people move through life untreated or even diagnosed.
+      </p> 
+      <p>
+        It’s easy to feel helpless when the most well-known resources are out of reach. <b> Better Mind compiles resources at no charge and offers education and options to those who don’t know where to turn. </b> Knowledge is power and giving those suffering with poor mental health puts the power back into the hands (and minds!) of its users.
+      </p>
+      <h2> How Might We..</h2>
+      <p> <b> Motivate people to track their mental health, 
+        make changes to improve it, and find relevant resources, 
+        while being accessible? </b>
+      </p>
+      <h2> Our Solution </h2>
+      <p> <li> Match users to social and volunteer events </li>
+        <li> Improve ease of finding relevant resources </li>
+        <li> Give users a space to self-reflect with a journal </li>
+        <li> Motivate users by setting personal goals </li>
+        <li> Partner with local hospitals, libraries, and shelters to distribute paper resources </li>
+      </p>
+      <h2> Design Process </h2>
+      <picture> 
+        <source srcset="https://i.imgur.com/b4SI5Ar.png" media="(max-width:767px)">
+        <img src="img/BetterMind/design_process.png" alt="Fetch project">
+      </picture>
+      <h2> Brainstorming </h2>
+      <h3> Idea vs Assumptions  </h3>
+      <p> As a team, we went through 3 hours of brainstorming for the best possible, feasible product features that could serve this problem challenge: 
+        <b> How might we remove the barrier of cost and access to care, and empower all individuals to self-manage their mental health? (DBSA) </b>
+      </p>
+      <picture> 
+        <source srcset="https://i.imgur.com/VzG33IX.png" media="(max-width:767px)">
+        <img src="img/BetterMind/project_brainstorm.png" alt="Fetch project">
+      </picture>
+      <picture> 
+        <source srcset="https://i.imgur.com/geZyOfQ.png" media="(max-width:767px)">
+        <img src="img/BetterMind/brainstorm_2.png" alt="Fetch project">
+      </picture>
+      <p> We also assessed DBSA's current website and their product features to get an overview of the priority of their resources. What DBSA didn't have that we could add. Also, what we could change to improve. <b> Note: </b> Please feel free to zoom in </p>
+      <h2> Research </h2>
+      <h3> Competitor Analysis </h3>
+      <p> I conducted competitor research to understand what is currently available in the market. The strengths &amp; weaknesses of these companies: <b> Ginger, Moodkit, Wysa AI Chatbot, Reflectly. </b> This is what I found. 
+      </p>
+      <picture> 
+        <source srcset="https://i.imgur.com/W9EEkqb.png" media="(max-width:767px)">
+        <img src="img/BetterMind/competitive_analysis.png" alt="Fetch project">
+      </picture>
+      <h3> Qualitative Research </h3>
+      <p> We conducted user survey's to get a deeper insight on the user needs with DBSA's mental health app. These are the painpoints &amp; opportunity that we gathered:
+      </p>
+      <p> <li> <b> 37.5% </b> said it was hard to find relevant mental health resources </li>
+        <li> <b> 64.7% </b> said they would be interested in staying up to date with extracurricular and volunteer events in your community </li>
+          <li> Personal motivation was an obstacle in improving their mental health </li>     
+      </p>
+      <h2> Develop </h2>
+      <h3> Minimum Viable Product </h3>
+      <p> We separated the narrowed the product features down to the wants vs needs for this app. We really wanted to focus on the personal portal access so that 
+        people could self access while having all the other resources they could need in one app. 
+      </p>
+      <picture> 
+        <source srcset="https://i.imgur.com/LVZK7Tl.png" media="(max-width:767px)">
+        <img src="img/BetterMind/mvp.png" alt="Fetch project">
+      </picture>
+      <h2> Site Map </h2>
+      <p> I was in charge of the flow &amp; wireframes for the onboarding process, the personal assessments and the landing homepage. 
+      </p> 
+      <picture> 
+        <source srcset="https://i.imgur.com/kCLzLFt.png" media="(max-width:767px)">
+        <img src="img/BetterMind/sitemap.png" alt="Fetch project">
+      </picture>
+      <h2> User Flows </h2>
+      <p> Each of the flows created represents a given task/goal needed to be accomplished. 
+        For instance, <b> event registrations, accessing resources &amp; your mood journal. </b>
+      </p>
+      <p>
+        The main challenge with curating the flow was figuring out the navigation. We wanted to flow to be easily accessible while keeping all the features clear to the user. That is why we decide to add 
+        an early onboarding to let the users know the benefit of using this app. One thing we kept in mind was not to overwhelm the user. 
+      </p>
+      <picture> 
+        <source srcset="https://i.imgur.com/HDA6w7V.png" media="(max-width:767px)">
+        <img src="img/BetterMind/user_flow.png" alt="Fetch project">
+      </picture>
+      <h2> Design </h2>
+      <h3> Low-Fidelity </h3>
+      <p>
+        We split up the low-fidelity wireframes by the user flow that we created. I was in charge of the onboarding, personal assessment and user homepage. This was a challenging process because we were under time constraints. 
+      </p>
+      <picture>
+        <source srcset="https://i.imgur.com/TAdQXae.png" media="(max-width:767px)">
+        <img src="img/BetterMind/low_fis.png" alt="Fetch project">
+      </picture>
+      <h2> Visual Design </h2>
+      <p> We decide to stay true to DBSA's color scheme as well as their friendly icons. 
+        For the typography, I decided to go with a heading font that is more friendly and inviting. For the body font,
+        I decided to go with Helvetica because it's a simple san serif &amp; it's easy to read. 
+      </p>
+      <picture> 
+        <source srcset="https://i.imgur.com/v1p3JuC.png" media="(max-width:767px)">
+        <img src="img/BetterMind/moodboard.png" alt="Fetch project">
+      </picture>
+      <h2> High-Fidelity </h2>
+      <p> After getting the low-fis &amp; the visual design down. We got a sense of how the app is mapping out, we hopped into designing
+        the final designs. 
+      </p>
+      <picture> 
+        <source srcset="https://i.imgur.com/vLOv7mc.png" media="(max-width:767px)">
+        <img src="img/BetterMind/wireframes.png" alt="Fetch project">
+      </picture>
+      <h3> User Testing </h3>
+      <p> 
+        After the high-fidelity's, we created a prototype to send out to participants of the testing phase to try the app out. 
+        We found that this app is jam-packed with features and it might be quite confusing. So, we decided to
+        add a few extra screens in the onboarding process to help them get started with the app. 
+      </p>
+      <a href="https://www.figma.com/proto/fcFXIdCUHHpvnQxTLValg9/Sketches?node-id=108%3A3641&scaling=scale-down&page-id=29%3A377&starting-point-node-id=49%3A14135&show-proto-sidebar=1" target="_blank" class="button"> Check out Prototype </a>
+      <h2> Final Designs </h2>
+      <picture> 
+        <source srcset="https://i.imgur.com/p0tab3V.png" media="(max-width:767px)">
+        <img src="img/BetterMind/mockups.png" alt="Fetch project">
+      </picture>
+      <h2> Retrospective </h2>
+      <p> My thoughts and challenges I’ve faced during this project
+      </p>
+      <h3> Thoughts </h3>
+      <p> The experience I had working with a team on a project was by far the best. 
+        I learned a lot while participating in this hackathon while not knowing what to expect because of the team dynamics and the community of Girls in Tech. I learned how to collaborate cross-functionally with people who have different perspectives and skillsets.
+         Our team faced significant obstacles and challenges as a result of time constraints and different time zones. Because we conducted our research using the resources that DBSA already had while including new functionalities that DBSA was seeking, I thought that our group had a good proposal and solution. 
+        I've always thought that attacking the issue from its source could be the best strategy. 
+      </p>
+        <h3> Challenges </h3>
+        <p> It was challenging having such little time with each of the project deliverables. However, the most time that we took is getting the brainstorm and research down. You only get one chance 
+          to try to solve the problem statement. So, we made sure we were all on the same page. Because we were on different timezones, we divided up the tasks 
+          accordingly. 
+        </p>
+        <h3> What I learned </h3>
+        <p> 
+          I learned a significant amount when partipating in this hackathon. It taught me how to think strategically in different angles to tackle problems. 
+          What's more is that I enjoyed the collboration, learning design techniques from my teammates. I'm glad to a part of this design sprint. 
+        </p>
+        <h2 class="alignCenter"> Thanks for stopping by! </h2>
+        <a href="https://www.figma.com/proto/fcFXIdCUHHpvnQxTLValg9/Sketches?node-id=108%3A3641&scaling=scale-down&page-id=29%3A377&starting-point-node-id=49%3A14135&show-proto-sidebar=1" target="_blank" class="button"> Check out Prototype </a>
+        <span> </span>
+        <a href="https://devpost.com/software/ctrl-alt-elite-5alnkz" target="_blank" class="caseStudy"> Full project on Devpost</a>
+      </div>
+  </div> 
+
+        <div class="alignCenter"> 
+          <br>
+          <h3> Want to chat about design over a good cup of coffee?</h3>
+        </div>
+      </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>  
+</body>
+
+<!--FOOTER-->
+<footer id="contact">
+  <div> 
+    <h2>Say Hello</h2>
+    <p> 
+      Get in touch!
+    </p> 
+    <div>
+      <a href="mailto:tiffanylau117@gmail.com" class="button contact" id="">Email me</a>
+    </div>
+  </div>
+  
+  <div>
+      <!--Social Media Layout and Placeholders-->
+      <a href="https://www.linkedin.com/in/tiffanylau117/" target="_blank"> 
+        <xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN''http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g>
+              <path d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z"/>
+              <path d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   
+              c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    
+              M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   
+              C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   
+              c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   
+              c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z"/>
+           </g>
+        </svg> 
+        </xml>
+      </a>
+      <a href="https://www.behance.net/tiffany_lau" target="_blank"> 
+        <xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN''http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_2" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g>
+              <path d="M38.031,27.257c-3.174,0-3.615,3.168-3.615,3.168h6.748C41.164,30.425,41.207,27.257,38.031,27.257z"/>
+              <path d="M22.721,30.425h-5.982v5.492h5.296c0.09,0,0.225,0.002,0.383,0c0.852-0.02,2.467-0.268,2.467-2.67   C24.885,30.396,22.721,30.425,22.721,30.425z"/>
+              <path d="M28.348,5.101c-13.6,0-24.625,11.023-24.625,24.623c0,13.6,11.025,24.625,24.625,24.625   c13.598,0,24.623-11.025,24.623-24.625C52.971,16.125,41.945,5.101,28.348,5.101z M33.531,20.231h8.477v2.53h-8.477V20.231z    
+              M29.246,33.503c0,6.271-6.525,6.064-6.525,6.064h-5.982h-0.175h-4.535V19.021h4.535h0.175h5.982c3.248,0,5.812,1.794,5.812,5.47   
+              c0,3.676-3.135,3.91-3.135,3.91C29.531,28.401,29.246,33.503,29.246,33.503z M45.104,33.167H34.457   c0,3.816,3.615,3.576,3.615,3.576c3.414,0,3.295-2.211,3.295-2.211h3.617c0,5.867-7.033,5.465-7.033,5.465   c-8.436,0-7.893-7.855-7.893-7.855s-0.008-7.893,7.893-7.893C46.268,24.249,45.104,33.167,45.104,33.167z"/>
+              <path d="M24.174,24.81c0-2.137-1.453-2.137-1.453-2.137h-0.77h-5.212v4.584h5.611C23.318,27.257,24.174,26.946,24.174,24.81z"/>
+          </g>
+        </svg>
+        </xml>
+      </a> 
+      <a href="https://github.com/tiffanylau117" target="_blank"> 
+        <svg 
+        xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="60" height="60"
+        viewBox="0 0 30 30">
+        <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+        ></path>
+        </svg>
+    </a>  
+  </div>
+  <p> Built with &#x2661; by Tiffany Lau </p>
+  <p class="copyRight">© 2023 Tiffany Lau. All rights reserved</p>
+</footer>
+</html>

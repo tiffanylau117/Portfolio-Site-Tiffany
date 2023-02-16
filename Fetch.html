@@ -22,21 +22,28 @@
             <a href="index.html"> 
              <img src="img/Logo.png" alt="Logo" class="logo">
             </a>
-           <nav> 
-          <ul class="navigation"> 
-            <li><a href="index.html" class="index">Work ↓</a>
-             <div class="dropdown"> 
-              <ul>
-                <!-- <span>
-                  <a href="#Work" class="index">Fun Projects</a>
-                </span> -->
+            <nav role="navigation">
+              <ul class="navigation"> 
+                <li><a href="index.html" class="index">Projects</a></li>
+                <li><a href="art.html" class="index">Art</a></li>
+                <li><a href="contact.html" class="about">About</a></li>
+                <li><a href="#contact" class="contactButton" onclick="menuToggle()">Say hello</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i></i></a></li>
               </ul>
-             </div>
-            </li>
-            <li><a href="contact.html" class="about">About</a></li>
-            <li><a href="#contact" class="contactButton" onclick="menuToggle()">Say hello</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-          </ul>
+  
+              <div id="menuToggle">
+              <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+              <ul id="menu">
+                <a href="index.html"><li>Projects</li></a>
+                  <ul><a href="#"><li>Art</li></a></ul>
+                <a href="contact.html"><li>About</li></a>
+                <a href="#contact"><li>Say Hello</li></a>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i></i></a></li>
+              </ul>
+              </div>
             </nav>
           </div> 
         </div>
@@ -48,17 +55,22 @@
     <br>
     <br>
     <picture> 
-      <source srcset="https://i.imgur.com/b1pAUHz.png" media="(max-width:767px)">
-      <img src="img/Fetch/1x_PNG_Images/1x_Fetch feature.png" alt="Fetch project">
+      <source srcset="https://i.imgur.com/poBAbrR.png" media="(max-width:767px)">
+      <img src="img/Fetch/1x_PNG_Images/1x_Fetch_feature.png" alt="Fetch project">
     </picture>
   </div>
 
   <div class="container" id="caseStudy">
     <div>
-      <h1> How it started </h1>
+      <h1> Overview </h1>
+      <picture> 
+        <source srcset="https://i.imgur.com/kxReVyR.png" media="(max-width:767px)">
+        <img src="img/Fetch/1x_PNG_Images/Overview.png" alt="Fetch project">
+      </picture>
+      <h2> How it started </h2>
       <p>
         Before deciding to leave my dog at home alone, once again, I thought to myself, why can’t I just bring him? I’m pretty sure there are many places
-        that are dog-friendly. But, do I want to guess or do I want to be sure?
+        that are dog-friendly. But, <b> do I want to guess or do I want to be sure? </b>
       </p>
       <p> There must be an ubiquitous platform out there that can get me a definitive answer to all my questions.
       </p>
@@ -71,29 +83,30 @@
         There needs to be a well-rounded reliable platform where you could check for dog-friendly places.
        </p>
       <h2> Solution </h2>
-      <p> My goal is to design a universal app that simplifies pawrents lives, while having features where it can enhance your pet’s quality of life. 
-        Best of both worlds.
+      <p> My goal is to design a universal app that simplifies pawrents lives, while having features; <b> ie. personalized portal, integrated map, health management and most importantly, amenity &amp; service-based resources. 
+        This apps goal is to enhance both yours &amp; your pet’s quality of life. 
+        Best of both worlds. </b>
       </p>
       <h2> Hypothesis </h2>
-      <p> Users want a universal dog app that has a geolocation integration and simplifies their search by accessing a database of information including;
-       recommendations on services and amenities.
+      <p> Users want a universal dog app that has a <b> geolocation integration and simplifies their search by accessing a database of information including;
+       recommendations on services and amenities. </b>
       </p>
-      <p> Users also want to be able to explore new searches, document their pet’s activities to access their health by registering a pet profile. 
+      <p> Users also want to be able to <b> explore new searches, document their pet’s activities to access their health by registering a pet profile. </b>
       </p>
       <h2> Design Process </h2>
       <h3 class="h3Profile"> Using (HCD) Human-Centered Design </h3>
       <p> aims to improve usability throughout development process 
       </p>
       <picture> 
-        <source srcset="https://i.imgur.com/T75zR0r.png" media="(max-width:767px)">
+        <source srcset="https://i.imgur.com/NFgPaVL.png" media="(max-width:767px)">
         <img src="img/Fetch/1x_PNG_Images/Design_ process.png" alt="Fetch project">
       </picture>
       <h2> Research </h2>
       <h3 class="h3Profile"> Qualitative </h3>
-      <p> I conducted 3 interviews with dog owners of different demographics. Here are the questions and results.
+      <p> I began this case study with qualitative research. I conducted 3 interviews with dog owners in person of different demographics. Here are the questions and results.
       </p>
       <picture> 
-        <source srcset="https://i.imgur.com/543VzNb.png" media="(max-width:767px)">
+        <source srcset="https://i.imgur.com/DEn1BeP.png" media="(max-width:767px)">
         <img src="img/Fetch/1x_PNG_Images/Research.png" alt="Fetch project">
       </picture>
       <h2> Competitve Analysis </h2>
@@ -101,22 +114,22 @@
         recommendations and services.
       </p>
       <picture> 
-        <source srcset="https://i.imgur.com/X6Ceasi.png" media="(max-width:767px)">
+        <source srcset="https://i.imgur.com/wjDMI1J.png" media="(max-width:767px)">
         <img src="img/Fetch/1x_PNG_Images/Competitive_ Analysis.png" alt="Fetch project">
       </picture>
       <h2> Understanding the user </h2>
-      <p> conducted research on the who, what, when, where, why and which that I’m
+      <p> I conducted research on the who, what, when, where, why and which that I’m
         designing this app for. The main focus is what can the user get out of this app? 
       </p>
       <picture> 
-        <source srcset="https://i.imgur.com/XSN3ytH.png" media="(max-width:767px)">
+        <source srcset="https://i.imgur.com/zvlVeQO.png" media="(max-width:767px)">
         <img src="img/Fetch/1x_PNG_Images/User _research.png" alt="Fetch project">
       </picture>
       <h2> User Personas </h2>
       <p> Understand the users’ goals, needs, behavior and experiences.
       </p> 
       <picture> 
-        <source srcset="https://i.imgur.com/Uym6ncu.png" media="(max-width:767px)">
+        <source srcset="https://i.imgur.com/nhiLaNA.png" media="(max-width:767px)">
         <img src="img/Fetch/1x_PNG_Images/User_personas.png" alt="Fetch project">
       </picture>
       <h2> User Flows </h2>
@@ -125,22 +138,22 @@
          homepage.
       </p>
       <picture> 
-        <source srcset="https://i.imgur.com/y0upnpL.png" media="(max-width:767px)">
+        <source srcset="https://i.imgur.com/PoQHhsP.png" media="(max-width:767px)">
         <img src="img/Fetch/1x_PNG_Images/User_flow.png" alt="Fetch project">
       </picture>
       <h2> Wireframes </h2>
       <h3 class="h3Profile"> Low-Fidelity </h3>
-      <p> I sketched the low-fidelity wireframes using the crazy 8’s method to ideate
-        3 main routes users will take to complete a task. These tasks are; create a pet profile, route to destination,
-        and track your pet’s health.
+      <p> I sketched the low-fidelity wireframes using the <b> crazy 8’s method </b> to ideate
+        3 main routes users will take to complete a task. These tasks are; <b> create a pet profile, route to destination,
+        and track your pet’s health. </b>
       </p>
       <picture> 
-        <source srcset="https://i.imgur.com/P59hHZj.png" media="(max-width:767px)">
+        <source srcset="https://i.imgur.com/moG3oW7.png" media="(max-width:767px)">
         <img src="img/Fetch/1x_PNG_Images/Low_fis.png" alt="Fetch project">
       </picture>
       <a href="https://drive.google.com/file/d/13XlJ1E8HggtKiizjrY2ishayFHgYvBDn/view?usp=sharing" target="_blank" class="button">See full version </a>
       <p> After testing the low-fidelity’s on 3 participants through Marvel. There
-        were missing elements that needed to be reiterated such as exit buttons and placement of navigational elements were switched for better usability. 
+        were missing elements that needed to be reiterated such as <b> exit buttons and placement of navigational elements were switched for better usability. </b>
         The wireframes on the mid-fidelity’s are updated version. 
       </p>
       <h3 class="h3Profile"> Mid-Fidelity </h3>
@@ -149,17 +162,17 @@
         and can complete
       </p>
       <p>
-        A) creating a dog profile, B) manage activity logistics for their dog,
-        C) accessing favorite recommendations D) accessing destination search bar, E) locating directions to destination using integrated map.
+        <b> A) creating a dog profile, B) manage activity logistics for their dog,
+        C) accessing favorite recommendations D) accessing destination search bar, E) locating directions to destination using integrated map. </b>
       </p>
       <picture>
-        <source srcset="https://i.imgur.com/00hzBQP.png" media="(max-width:767px)">
+        <source srcset="https://i.imgur.com/RpOIEIA.png" media="(max-width:767px)">
         <img src="img/Fetch/1x_PNG_Images/Mid_fi's.png" alt="Fetch project">
       </picture>
       <a href="https://drive.google.com/file/d/16ihgg9zNxJoEViHHX3_Jqg9sHqxNMO5Z/view?usp=sharing" target="_blank" class="button">See full version </a>
       <h4> Test results </h4>
       <picture> 
-        <source srcset="https://i.imgur.com/LDhn1fz.png" media="(max-width:767px)">
+        <source srcset="https://i.imgur.com/WyQKew0.png" media="(max-width:767px)">
         <img src="img/Fetch/1x_PNG_Images/Test_results.png" alt="Fetch project">
       </picture>
       <h3 class="h3Profile"> High-Fidelity </h3>
@@ -167,7 +180,7 @@
         3 participants. There were more user pain points I’ve found. The wireframes below are modified based on the mid-fi’s.
       </p>
       <picture> 
-        <source srcset="https://i.imgur.com/pN2WS5q.png" media="(max-width:767px)">
+        <source srcset="https://i.imgur.com/l7PKEMe.png" media="(max-width:767px)">
         <img src="img/Fetch/1x_PNG_Images/High-fis.png" alt="Fetch project">
       </picture>
       <a href="https://drive.google.com/file/d/1GVSrBTQoWb1KgiDXUTf-FePVU4dWSlcQ/view?usp=share_link" target="_blank" class="button">See full version </a>
@@ -176,7 +189,7 @@
       <p> Testing the breakpoints was actually conducted right before the high fidelity wireframes were modified above. This was tested with 3 participants to get feedback and test the usability between different breakpoints for the homepage
       </p>
       <picture> 
-        <source srcset="https://i.imgur.com/Ym7vlmM.png" media="(max-width:767px)">
+        <source srcset="https://i.imgur.com/yIdcAo6.png" media="(max-width:767px)">
         <img src="img/Fetch/1x_PNG_Images/Breakpoints.png" alt="Fetch project">
       </picture>
       <p>
@@ -192,12 +205,12 @@
       </picture>
       <h2> Style Guide </h2>
       <picture> 
-        <source srcset="https://i.imgur.com/EsPusrl.png" media="(max-width:767px)">
+        <source srcset="https://i.imgur.com/himJlzV.png" media="(max-width:767px)">
         <img src="img/Fetch/1x_PNG_Images/Style_guide.png" alt="Fetch project">
       </picture>
       <h2> Product Features </h2>
       <picture> 
-        <source srcset="https://i.imgur.com/6Mom80M.png" media="(max-width:767px)">
+        <source srcset="https://i.imgur.com/XqThs1B.png" media="(max-width:767px)">
         <img src="img/Fetch/1x_PNG_Images/Product_feature.png" alt="Fetch project">
       </picture>
       <h2> Final Designs </h2>
@@ -234,9 +247,9 @@
       </div>
   </div> 
 
-        <div id="alignCenter"> 
+        <div class="alignCenter"> 
           <br>
-          <h3> Want to chat about design over a good couple of coffee?</h3>
+          <h3> Want to chat about design over a good cup of coffee?</h3>
         </div>
       </main>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -283,8 +296,17 @@
           </g>
         </svg>
         </xml>
-      </a>  
+      </a> 
+      <a href="https://github.com/tiffanylau117" target="_blank"> 
+        <svg 
+        xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="60" height="60"
+        viewBox="0 0 30 30">
+        <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+        </svg>
+    </a>  
   </div>
+  <p> Built with &#x2661; by Tiffany Lau </p>
   <p class="copyRight">© 2023 Tiffany Lau. All rights reserved</p>
 </footer>
 </html>
